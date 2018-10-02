@@ -17,8 +17,8 @@ Instalasi :
 - Tes jalankan pada browser.
 
 Preview :
+- https://lab.firstplato.com/saw
 - 
--
 
 Minimum requirements :
 - PHP 5.x
