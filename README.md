@@ -16,7 +16,7 @@ Instalasi :
   contoh $mysqli = new mysqli('localhost','user-kamu','password-kamu','nama-database-kamu');
 - Tes jalankan pada browser.
 
->Preview :
+Preview :
 - https://lab.firstplato.com/saw
 - https://youtu.be/q3tYGpvlejs
 
