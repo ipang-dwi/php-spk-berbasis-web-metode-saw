@@ -1,0 +1,19 @@
+
+
+{
+	"sProcessing":   "Sedang memproses...",
+	"sLengthMenu":   "Tampilkan _MENU_",
+	"sZeroRecords":  "Tidak ditemukan data yang sesuai",
+	"sInfo":         "Menampilkan _START_ - _END_ dari _TOTAL_ data",
+	"sInfoEmpty":    "Menampilkan 0 - 0 dari 0 data",
+	"sInfoFiltered": "(disaring dari _MAX_ entri keseluruhan)",
+	"sInfoPostFix":  "",
+	"sSearch":       "Cari : ",
+	"sUrl":          "",
+	"oPaginate": {
+		"sFirst":    "Pertama",
+		"sPrevious": "Sebelumnya",
+		"sNext":     "Selanjutnya",
+		"sLast":     "Terakhir"
+	}
+}
