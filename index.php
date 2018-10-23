@@ -45,7 +45,7 @@
 
     <div class="container">
 
-      <form class="form-signin" method="post" target="_self">
+      <form class="form-signin" method="post" action="cek.php">
         <center>
 		<img src="ui/img/logo.png" class="img-responsive" />
 		<h3 class="form-signin-heading text-primary">Silahkan Login</h3></center>
@@ -60,37 +60,18 @@
       </form>
 
     </div> <!-- /container -->
-
-<?php
-	if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-		if($_POST && $_POST['user']!='' && $_POST['pass']!=''){
-			$result = $mysqli->query("select * from user WHERE user = '".$_POST['user']."' and pass = '".hashku(1,$_POST['pass'])."'");
-			if(@$result->num_rows != 0){
-				while ($row = $result->fetch_assoc()) {
-					$_SESSION['login'] = 'KJHAbkfase86234809701234hgvbKHJGVYH%$&^$%&$^*';
-					$_SESSION['user'] = $row['user'];
-					$_SESSION['pass'] = $row['pass'];
-				}
-				header('Location: dashboard.php');
-			}
-			else { ?>
-				<script>
+			<?php if (isset($_SESSION['error'])&&$_SESSION['error']==1){ ?>
+			<script>
 				  swal({
 					  title: 'Login Error!',
 					  text: 'Maaf Username atau Password salah..',
 					  type: 'error',
 					  confirmButtonText: 'OK'
 				  })
-				</script>
-	<?php	}
-		}
-		if(@$_POST['user']=='')
-			echo " username harus diisi..";
-		if(@$_POST['pass']=='')
-			echo " password harus diisi..";
-	}
-?>
-	
+			</script>
+			<?php 
+			$_SESSION['error']=0;
+			} ?>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
