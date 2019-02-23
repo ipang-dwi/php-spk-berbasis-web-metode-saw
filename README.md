@@ -1,6 +1,6 @@
 # php-spk-berbasis-web-metode-saw
 
-<img src="https://img.shields.io/github/license/ipang-dwi/xdesktop.svg" /> <img src="https://img.shields.io/badge/lab-firstplato.com-red.svg" />
+<img src="https://img.shields.io/github/license/ipang-dwi/xdesktop.svg" /> <img src="https://img.shields.io/badge/lab-firstplato.com-red.svg" /> <img src="https://img.shields.io/badge/need-donation-brightgreen.svg" />
 
 SPK (Sistem Pendukung Keputusan) berbasis web dengan metode SAW (Simple Additive Weighting)
 
